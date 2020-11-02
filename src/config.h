@@ -40,7 +40,9 @@
 #define LARGE_BINARY 1
 
 #ifndef __clang__
+#ifndef WINDOWS_CROSS
 #define USE_SIMD 1
+#endif
 #endif
 
 /**************************/
